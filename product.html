@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>家家商品</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <div class="header"></div>
+    <div class="main">   
+      <div class="product">
+        <div class="video">
+            <video src="img/aerostier_home_1920x800.mp4" autoplay loop></video>
+        </div>
+        <div class="pro-detail">
+            <!-- 众多商品 -->
+            <div class="pro-list left">  
+                <p>搜索结果</p>
+                <ul class="show-list">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="img/uav5.jpg" alt="">
+                        </a>
+                        <p>
+                            ¥<span class="price">5000</span>
+                            <a href="product_details.html?lid=${p.lid}">卡刷卡飞机撒打飞机阿萨德李开复</a>
+                        </p>
+                        <div>
+                                <span class="reduce">-</span>
+                                <input type="text" value="1">
+                                <span class="add">+</span>
+                                <a href="javascript:;" class="addCart">加入购物车</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pages">
+                        <a href="javascript:;" class="previous disabled">上一页</a>
+                        <a href="javascript:;" class="current">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;" class="next">下一页</a> 
+                </div>
+            </div>
+            <!-- 商家公告 -->
+            <div class="notice left">
+                <div>商家公告</div>
+                <p>我们绝对不会和其他一些打着超低价位却是销售劣质产品的商家打价格战
+                    <br/>
+                    我们带给客户的就是绝对的放心。我们没有暴利，获得的只是合理的利润。<br/>
+                    合理的价格保证我们能够在提供给您收货时物超所值的感觉和惊喜的同时、创造真诚优异的售后服务!! </p>
+                <div class="cart">
+                    <!-- 1.标题 -->
+                    <p class="title">
+                        <span>购物车</span>
+                        <a href="#">清空</a>
+                    </p>
+                    <div class="cart_content">
+                            <!-- 2、内容 -->
+                        <!-- <div class="item">
+                            <span>联想(ThinkPad)轻薄系列E470c(20H3A003CD)14英寸笔记本电脑(i5-6200U 8G 1T 2G独显 Win10)黑色</span>
+                            <div>
+                                <span class="reduce">-</span>
+                                <input type="text" value="1">
+                                <span class="add">+</span>
+                            </div>
+                            <p>
+                                <span>¥</span><span>5499.00</span>	
+                            </p>
+                        </div> -->
+                    </div>
+                    <!-- 3、购物车结算 -->
+                    <div class="cart-result">
+                        <span>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-gouwuche"></use>
+                            </svg>
+                           ￥<span class="result" id="total">0.00</span>	
+                        </span>
+                        <a href="cart.html">去结算</a>
+                    </div>
+                </div>               
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer clear"></div>
+    
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/product.js"></script>
+<!--引入阿里矢量图js  -->
+<script src="font_vyo86uekz6ko6r/iconfont.js"></script>
+</body>
+</html>

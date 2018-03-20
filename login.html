@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录-注册</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">    
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login">
+   <div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
+   <div class="login-true"> 
+      <div class="log-change"><span class="l1">注册</span>&nbsp; | &nbsp;<span class="l2">登录</span></div>
+       <!-- 注册 -->
+	  <div class="enroll fate">
+		   <div class="log-zhu left">
+		     <div>		    
+		        <label>
+			    <span class="star">*</span>
+			        电话 号码 ：</label>			
+				<input class="phone" type="text" placeholder="请输入您的手机号码" autofocus/>
+				<span class="chk-phone err"></span>
+		     </div>
+		     <div>		    
+		        <label>
+			    <span class="star">*</span>
+			       密码 ：</label>			
+				<input class="pass" type="password" placeholder="请输入密码"/>
+				<span class="chk-pass err"></span>
+		     </div>
+		     <div>		    
+		        <label>
+		      	<span class="star">*</span>
+		     	再输一次密码 ：</label>			
+				<input class="pass-too" type="password" placeholder="请确认密码"/>
+				<span class="too-pass err"></span>
+		     </div>
+		     <div class="code">		    
+		         <label>
+			     <span class="star">*</span>
+			         短信验证码 ：</label>			
+			     <input placeholder="请输入验证码"></input>
+		       	 <span title="点击发送验证码" class="log-time">60</span>
+		     </div>
+		     <div class="que">收不到验证码?</div>
+			 <div class="checkbox">
+			   <input class="ched" type="checkbox"/>
+			   <span>我同意《用户手册》和《保密条款》</span>
+			 </div>
+			 <button class="submit1" type="button" disabled>立即注册</button>
+	  	   </div>
+           <div class="log-ins right">
+		       <div >已有帐号，<a href="javascript:;" class="to-login">直接登录»</a></div>
+		       <div><a href="javascript:;">微博注册帮助</a></div>
+			   <div><a href="javascript:;">微博注册操作指南</a></div>
+			   <div><a href="javascript:;">手机注册时提示手机号码已被绑定怎么办?</a></div>
+			   <div><a href="javascript:;">注册微博时昵称显示“已经被注册”如何处理?</a></div>
+			   <div><a href="javascript:;">注册时提示"你所使用的IP地址异常",该怎么办?</a></div>
+			   <div><a href="javascript:;">更多帮助»</a></div>
+		   </div>		
+      </div>
+       <!-- 登录 -->
+	  <div class="entry">
+	       <div class="ent-left left">
+			 <form>  
+	  	       <div>
+			       <label>手机/用户名/邮箱</label>
+				   <input class="user" type="text" placeholder="请输入用户名" autofocus/>
+				   <span class="chk-user err"></span>
+			   </div>
+			   <div>
+				    <label>用户密码</label>
+					<input class="upwd" type="password" placeholder="请输入密码"/>
+					<span class="chk-upwd err"></span>
+			   </div>
+			   <div class="code">
+				    <label>验证码</label>
+					<input class="txtCode" type="text" placeholder="请输入验证码">
+					<img  class="imgCode" src="data/getCode.php" title="看不清点击换一张">
+					<br>
+					<p id="msg"></p>
+					<button class="submit2" id="btn" type="button">立即登录</button>
+			        <div><a href="javascript:;">忘记密码？点这里找回</a></div>
+			   </div>
+		 	 </form>  
+		   </div>
+           <div class="ent-right left">
+		      <div>用户注册/登录说明：</div>
+			  <div>1、演示用户名：demouser；密码： demo1234</div>
+			  <div>2、实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：<a href="javascript:;">《用户管理中相关邮件的配置》</a></div>
+			  <div>3、新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程<a href="javascript:;">《《如何设置用户注册后的审核方式》</a></div>
+			  
+		   </div>	      
+	  </div>
+   </div>	  
+   <div class="copy">Copyright © 2010-2015 家家设备商城 All rights reserved</div>
+</div>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

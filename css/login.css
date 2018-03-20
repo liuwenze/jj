@@ -1,0 +1,161 @@
+.login>div:first-child{text-align:center;margin:0 auto}
+.login .logo img{
+width:300px;
+margin-top:30px;
+margin-bottom:50px;
+}
+.login{
+margin:0px;
+width:100%;
+height:800px; 
+background: url(../img/login_bg.jpg) no-repeat; 
+background-size:100% 100%;
+}
+.login .login-true{
+height:500px;
+background:#fff;
+margin-left:20%;
+border-radius:5px;
+width:60%;
+}
+.log-change{
+margin-left:30px;
+padding-top:20px;
+font-size:22px;
+color: #333;
+font-family: "Microsoft Yahei";
+margin-bottom:50px;
+cursor: pointer;
+}
+.log-change>span:hover{border-bottom:4px solid #FFA00A;color:#FFA00A}
+.star{
+color: #ff0000;
+font-family: "SimSun";
+font-size:14px;
+}
+.log-zhu{
+width:65%;
+margin-left:30px;
+border-right:1px solid #DEDEDE;
+}
+.log-ins{width:30%}
+.log-zhu>div{margin-top:15px}
+.log-zhu label{
+display:inline-block;
+width:120px;
+text-align:right;
+}
+.log-zhu input{
+font-size: 14px;
+height:25px;
+width: 196px;
+outline-style: none;
+border: 1px solid #ccc;
+border-radius:3px;
+margin-left:20px;
+box-shadow:none;
+}
+.log-zhu>.code input{width:130px;}
+.log-time{
+display:inline-block;
+border-radius:3px;
+margin-left:12px;
+border: 1px solid #ccc;
+cursor:pointer;
+width:50px;
+text-align:center;
+line-height:25px;
+height:25px;
+background:#F2F2F2;
+}
+.que{
+margin-left:143px;
+color: #0a8cd2;
+cursor: pointer;
+font-size:12px;
+}
+.checkbox{color:#0a8cd2;cursor: pointer}
+.checkbox input{
+vertical-align: middle;
+width:16px;
+height:16px;
+}
+.enroll .submit1{
+border: 1px solid #ff9b01;
+text-align: center;
+width: 196px;
+height:38px;
+margin-left:100px;
+margin-top:30px;
+border-radius: 2px;
+cursor: pointer;
+background:#ff9b01;
+}
+.to-login{color: #0a8cd2;cursor:pointer}
+.log-ins a{color: #0a8cd2}
+.log-ins>div:first-child{
+height:30px;
+line-height:30px;
+border-bottom:1px dotted #ccc;
+} 
+.log-ins>div{margin-bottom:10px;}
+.ent-left{margin-left:30px;width:55%}
+.ent-left{border-right:1px solid #DEDEDE;}
+.ent-right{margin-left:30px;width:30%}
+.ent-right>div:first-child{
+font-size: 15px;
+color: #000;
+font-family: ΢���ź�;
+margin-bottom:20px; 
+}
+.ent-right>div{color:#666;margin-bottom:10px;}
+.ent-right a{color: #0a8cd2;}
+.ent-left input{
+font-size: 14px;
+height:25px;
+width: 196px;
+outline-style: none;
+border: 1px solid #ccc;
+border-radius:3px;
+margin-left:20px;
+box-shadow:none;
+background:#F5F5F5;
+}
+.ent-left label{
+display:inline-block;
+width:120px;
+text-align:right;    
+}
+.ent-left div{margin-bottom: 30px;}
+.ent-left input.txtCode{width:130px}
+.code img{
+  vertical-align: middle;
+  margin-bottom:3px;
+  cursor:pointer;
+}
+#msg{
+    margin-left:150px;
+}
+.ok{color:green}
+.err{color:red}
+.code .submit2{
+    border: 1px solid #ff9b01;
+    text-align: center;
+    width: 196px;
+    height:38px;
+    margin-left:100px;
+    margin-top:30px;
+    border-radius: 2px;
+    cursor: pointer;
+    background:#ff9b01;
+    color:#000;
+}
+.code div:last-child{ margin-left:200px; margin-top:25px}
+.code div:last-child a{color: #0a8cd2}
+.copy{
+    margin-left:35%;
+    width:30%;
+    margin-top:80px;
+    color:#000;
+    font-size:14px;
+}

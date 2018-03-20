@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{width:100%;height:500px;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=baMmm1fKrOokYGXMltiZtMXRex6fnNn5"></script>
+    <title>线下门店</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+       <div id="allmap"></div>
+    </div>       
+    <div class="footer"></div>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <!--引入阿里矢量图js  -->
+    <script src="font_vyo86uekz6ko6r/iconfont.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(121.50109, 31.23691), 11);
+    var point = new BMap.Point(121.50109, 31.23691 );
+    var Bpoint = new BMap.Point(115.38 ,39.90 );
+    var Cpoint = new BMap.Point(116.38 ,41.90 );
+    var Dpoint = new BMap.Point(121.60109, 31.23691 );
+
+	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+	/*缩放控件type有四种类型:
+	BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+	
+	//添加控件和比例尺
+	function add_control(){
+		map.addControl(top_left_control);        
+		map.addControl(top_left_navigation);     
+		map.addControl(top_right_navigation);    
+	}
+    add_control()
+ 
+    var marker = new BMap.Marker(point); 
+  var opts = {title : '<span style="font-size:14px;color:#0A8021">家家线下地址</span>'};
+  var infoWindow =new BMap.InfoWindow("<div style='line-height:1.8em;font-size:12px;'>上海**区**街道**号</div>", opts);  // 创建信息窗口对象，引号里可以书写任意的html语句。
+  marker.addEventListener("mouseover", function(){
+   this.openInfoWindow(infoWindow);
+  });
+  map.addOverlay(marker);
+  var Bmarker = new BMap.Marker(Bpoint); 
+  var BinfoWindow =new BMap.InfoWindow("<div style='line-height:1.8em;font-size:12px;'>北京**区**街道**号</div>", opts);  // 创建信息窗口对象，引号里可以书写任意的html语句。
+  Bmarker.addEventListener("mouseover", function(){
+   this.openInfoWindow(BinfoWindow);
+  });
+  map.addOverlay(Bmarker);
+  var Cmarker = new BMap.Marker(Cpoint); 
+  var CinfoWindow =new BMap.InfoWindow("<div style='line-height:1.8em;font-size:12px;'>河北**区**街道**号</div>", opts);  // 创建信息窗口对象，引号里可以书写任意的html语句。
+  Cmarker.addEventListener("mouseover", function(){
+   this.openInfoWindow(CinfoWindow);
+  });
+  map.addOverlay(Cmarker);
+  var Dmarker = new BMap.Marker(Dpoint); 
+  var Dopts = {title : '<span style="font-size:14px;color:#0A8021">家家线下地址</span>'};
+  var DinfoWindow =new BMap.InfoWindow("<div style='line-height:1.8em;font-size:12px;'>上海**区**街道**号</div>", opts);  // 创建信息窗口对象，引号里可以书写任意的html语句。
+  Dmarker.addEventListener("mouseover", function(){
+   this.openInfoWindow(DinfoWindow);
+  });
+  map.addOverlay(Dmarker);
+	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+</script>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>家家商品</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/product-details.css"> 
+    <link rel="stylesheet" href="css/footer.css">    
+</head>
+<body>
+<div class="header">
+</div>
+<div class="detail">
+   <div class="main">
+       <!-- 导航 -->
+        <div class="bread">
+            <div id="bread-crumb">
+                <a href="javascript:;">首页</a>
+                <span>&gt;</span>
+                <a href="javascript:;">产品中心</a>
+                <span>&gt;</span>
+                <a href="javascript:;">智能科技</a>
+                <span>&gt;</span>
+                <span id="fname"></span>
+            </div> 
+        </div>
+                   <!--商品详细信息  -->
+        <div class="product-details">
+            <!-- 左边大图 -->
+                <div id="preview">
+                        <div id="mediumDiv">
+                          <img id="mImg" src="img/product/md/vr102 01.jpg">
+                          <div id="mask"> </div>
+                          <div id="superMask"></div>
+                        </div>
+                        <div id="largeDiv">
+                           
+                        </div>
+                        <h1>
+                          <a class="backward disabled"></a>
+                          <a class="forward"></a>
+                          <ul id="icon_list">
+
+                           </ul>
+                        </h1>
+                </div>
+                      <!--3.2 右上 ：文字信息 #show-details width:490px-->
+                <div id="show-details">
+                    <h1>${p.title}</h1>
+                    <h3>
+                        <a href="javascript:;">${p.subtitle}</a>
+                    </h3>
+                    <div class="price">
+                          <div class="stu-price">
+                             <b>家家价：</b>
+                             <span>¥${p.price}</span>
+                          </div>
+                          <div class="promise">
+                              <b>促　销：</b>
+                              <b class="xian">   限制 </b><b>此价格不与套装优惠同时享受</b>
+                          </div>
+                    </div>
+                    <div class="result">
+                        <div>月销量<span class="yue">${p.yue}</span></div>
+                        <div>累计评价<span class="ping">${p.ping}</span></div>
+                        <div>送家家积分<span class="ji">${p.ji}</span></div>
+                    </div>
+                       <!-- 客服 -->
+                    <p class="parameter">
+                         <b>客服：</b>
+                         <span>联系客服</span>
+                    </p>
+                      <!-- 数量 -->
+                    <p class="account">
+                         <span>数量：</span>
+                         <button class="number-reduce">-</button>
+                         <input type="text" value="1">
+                         <button class="number-add">+</button>
+                    </p>
+                      <!-- 购买部分 -->
+                    <div class="shops">
+                         <a href="javascript:;" class="buy">立即购买</a>
+                         <a href="javascript:;" class="cart">
+                            加入购物车
+                         </a>
+                    </div>
+               </div>
+        </div>
+        <!--  商品的各种规则参数 -->
+        <div class="pro-parameter">
+              <!--导航条 -->
+             <div class="tab-main">
+                  <ul>
+                      <li class="current">商品介绍</li>
+                      <li>规格与包装</li>
+                      <li>售后服务</li>
+                      <li>商品评价(100+)</li>
+                  </ul>
+             </div>
+             <div class="tab-int">
+                 <div class="a"></div>
+                 <div class="b"></div>
+                 <div class="c"></div>
+                 <div class="d"></div>
+             </div>
+        </div>                   
+    </div> 
+</div>
+<div class="footer"></div>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/header.js"></script>
+<script src="js/product-details.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

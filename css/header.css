@@ -1,0 +1,95 @@
+.header{
+width:100%;
+}
+.header-top{
+background:#757575;
+ height:46px;
+ margin:0 auto;
+}
+.header-top-zong{
+  width:1190px;
+  display:flex;
+  justify-content:space-between;
+  margin:0 auto;
+}
+/*头部左边*/
+.header-top-left{
+color:#DDDDDD;
+line-height:46px;
+font-size:12px;
+}
+/*阿里矢量图*/
+.icon {
+ width: 1em; height: 1em;
+ vertical-align: -0.15em;
+ fill: currentColor;
+ overflow: hidden;
+ color:#DDDDDD;
+ font-size:16px;
+}
+.wel{
+  margin-left:35px;
+}
+/*登录注册*/
+.header-top-right{
+  line-height:46px;
+}
+.header-top-right a{
+  color:#DDDDDD;
+  font-size:14px;
+}
+.header-top-right a:hover{
+  color:#0AA1ED
+}
+/*下面的导航条*/
+.header-down{
+ width:100%;
+ background:#fff;
+ height:98px;
+}
+.header-down-zong{
+ width:1190px;
+ margin:0 auto;
+ line-height:98px;
+}
+.header .logo img{
+ width:213px;
+ margin-top:25px;
+ margin-left:-20px;
+}
+.header-nav{
+ width:630px;
+}
+.header-nav li{
+width:65px;
+float:left;
+margin-left:60px;
+text-align:center;
+}
+.header-nav a{
+color:#707087;
+font-size:14px;
+}
+.header-nav li a:hover{
+color:#000;
+font-size:16px;
+}
+/*搜索框*/
+.search {
+ margin-top:30px;
+ border:2px solid #0AA1ED;
+ height:34px;
+ width:256px;
+ padding-left:10px;
+ margin-left:97px;
+ outline:none;
+ line-height:33.5px;
+}
+.search input{
+  width:200px;
+  border:none;
+  outline: none
+}
+.search-img img{
+ vertical-align: middle;
+}

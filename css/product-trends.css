@@ -1,0 +1,66 @@
+.product-trends{
+    width:100%
+}
+.trends{
+    width:100%;
+    height:60px;
+    background:#DD3333;
+}
+.trends>div{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    margin-left:8%;
+    line-height:60px;
+}
+.trends-list>div{margin-top:50px;}
+.trends-list .comment{
+    width:600px;
+    margin-left:20px;
+}
+.trends-tit a{
+    color: #333333;
+    font-size: 14px;
+    line-height: 14px;
+}
+.trends-time{
+    margin-top:15px;
+    margin-bottom:15px;
+    color: #bababa;
+    font-size: 12px;
+    line-height: 12px;
+}
+.trends-comment{
+    color:#9999A6;
+    font-size: 13px;
+}
+.trends-one i{
+    margin-top:10px;
+    display:block;
+    height:0.2px;
+    border:0.2px solid #bababa;
+}
+.pages{
+    width:730px;
+    padding:0px 20px;
+    text-align:right;
+    background:linear-gradient(to top , #f5f4f5,#e6e6e5);
+    height:40px;
+    line-height:40px;
+}
+.pages a{
+    padding:4px 10px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    color:#0aa1ed;
+}
+.pages a.current{
+    border-color:#0aa1ed;
+    background:#0aa1ed;
+    color:#fff;
+}
+.pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}

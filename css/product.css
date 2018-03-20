@@ -1,0 +1,214 @@
+.product{
+    width:100%;
+}
+.video video{
+    width:100%;
+    margin-bottom:30px;
+}
+.pro-detail{
+    margin-top:20px;
+    margin:0 auto;
+}
+.pro-list {
+    width:800px;
+}
+.pro-list p:first-child{
+    height:40px;
+    border-radius:3px;
+    line-height:40px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+.notice{
+    margin-left:30px;
+    width:370px;
+}
+.notice>div:first-child{
+    background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+    height:40px;
+    border-radius:3px;
+    line-height:40px;
+    padding-left: 20px;
+}
+.pro-list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:20px;
+    background: #fff;
+}
+.pro-list ul li{
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    text-align:center;
+    box-sizing:border-box;
+    margin:0 10px;
+    width: 230px;
+    margin-bottom:10px;
+    padding-bottom:20px;
+    overflow: hidden;
+}
+.pro-list ul li img{
+    width:220px;
+    height:180px;
+    transition:all 1s;
+    overflow: hidden;
+}
+.pro-list ul li img:hover{
+    transform:scale(1.1);
+
+}
+.pro-list ul li p{
+    text-align:left;
+    display:inline-block;
+    font-weight:bold;
+    color:#0aa1ed;
+    font-size:16px;
+    margin-bottom:15px;
+}
+.pro-list ul li p a{
+    display:block;
+    font-size:14px;
+    line-height:1.2;
+    color:#808080;
+}
+.pro-list ul li div span{
+    display:inline-block;
+    font-size:32px;
+    width:24px;
+    height:24px;
+    line-height:24px;
+    text-align:center;
+    color:#fff;
+    cursor:pointer;
+    background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+    vertical-align: top;
+}
+.pro-list ul li div input{
+    width:25px;
+    height:24px;
+    border:none;
+    text-align:center;
+    margin-top:5px;
+    outline:none;
+    position:relative;
+    bottom:4px;
+}
+.pro-list ul li div a{
+    font:14px simhei;
+    display:inline-block;
+    width:100px;
+    height:32px;
+    line-height:32px;
+    text-align:center;
+    background:linear-gradient(to bottom,#27b1f6,#00a1ed);
+    border-radius:2px;
+    color:#fff;
+    cursor:pointer;
+    top:-6px;
+}
+.pages{
+    padding:0px 20px;
+    text-align:right;
+    background:linear-gradient(to top , #f5f4f5,#e6e6e5);
+    height:40px;
+    line-height:40px;
+}
+.pages a{
+    padding:4px 10px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    color:#0aa1ed;
+}
+.pages a.current{
+    border-color:#0aa1ed;
+    background:#0aa1ed;
+    color:#fff;
+}
+.pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}
+.notice>p{
+    background: #fff;
+    padding:20px 20px;
+}
+.cart p.title{
+    width:250px;
+	padding:0 10px;
+	display:flex;
+	justify-content:space-between;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	background:linear-gradient(to bottom,#efefef,#e0e0e0);
+}
+.cart p.title a{
+    color:#333;
+}
+/* 购物车 */
+.cart div.cart-content{
+    background:#fff;
+}
+.cart div.item{
+	/*上边框，弹性布局，两端对齐，上下左右内边距*/
+	border-top:1px dashed #d0d0d0;
+	display:flex;
+	justify-content:space-between;
+    padding:10px;
+    width:250px;
+}
+
+.cart div.item>span{
+	width:65px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+.cart div.item>div span{
+	/*行内块，宽度，高度，渐变背景，文本颜色，文字大小，水平居中，行高*/
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:linear-gradient(to bottom,#efefef,#e1e1e1);
+	color:#fff;
+	text-align:center;
+    line-height:14px;
+    cursor: pointer;
+}
+.cart div.item>div input{
+	/*宽度，高度，取消边框，取消轮廓，文本水平居中对齐*/
+	width:14px;
+	height:14px;
+	border:none;
+	outline:none;
+	text-align:center;
+}
+/* 购物车结算 */
+.cart div.cart-result{
+	/*高度，行高，背景，上边框，左内边距*/
+    height:45px;
+    width:260px;
+	line-height:45px;
+	background:#808080;
+	border-top:1px dashed #d0d0d0;
+	padding-left:10px;
+	/*弹性布局，两端对齐*/
+	display:flex;
+	justify-content:space-between;
+}
+.cart div.cart-result .icon{
+    font-size:20px;
+}
+.cart div.cart-result span{
+	font-size:16px;
+	color:#fff;
+}
+.cart div.cart-result a{
+	width:30%;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+	background:linear-gradient(to bottom,#27b1f6,#0aa1ed);
+}

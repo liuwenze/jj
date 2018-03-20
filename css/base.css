@@ -1,0 +1,57 @@
+/*公共样式*/
+
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,input,button,textarea,img,th,td,span{
+  margin:0;
+  padding:0;
+}
+body{
+  font-size:14px;
+  font-family:"Î¢ÈíÑÅºÚ","Helvetica Neue",Helvetica,Arial;
+  color:#333;
+  background-color:#F7F7F7;
+  line-height:1.42857;
+}
+a{
+  text-decoration:none;
+}
+ul,ol,li{
+ list-style:none;
+}
+img{
+  border:0;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.clear{
+  display:table;
+  content:"";
+  clear:both;
+  overflow:hidden;
+}
+.fate{
+display:none;
+}
+.main{
+  width:1200px;
+  margin:0 auto;
+}
+.notice>p{
+  margin-top:20px;
+  padding:0 20px;
+}
+.fixed_nav{
+  background: #F5F5F5;
+  position:fixed;
+  z-index: 15;
+  top:0;
+  left:0;
+  right: 0;
+  width: 1000px;
+  height:50px;
+  transition: all 0.5s;
+  margin:0 auto;
+}
